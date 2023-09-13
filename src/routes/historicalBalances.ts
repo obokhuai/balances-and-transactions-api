@@ -2,6 +2,8 @@ import express, { Request, Response } from 'express';
 import { AccountTransaction } from '../models/account';
 import {  DatabaseConnectionError } from '../errors/database-connection-error'
 
+///api/historical-balances?from=2022-01-03&to=2022-01-05&sort=desc
+
 const router = express.Router();
 router.get('/api/historical-balances', async (req: Request, res: Response) => {
 
